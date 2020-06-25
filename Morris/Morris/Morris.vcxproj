@@ -165,6 +165,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GridMaker.h" />
+    <ClInclude Include="SocketGenerator.h" />
+    <ClInclude Include="UserInput.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

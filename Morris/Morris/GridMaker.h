@@ -2,12 +2,13 @@
 #include <iostream>
 #include <SFML/Graphics.hpp>
 using namespace sf;
+using namespace std;
 
-//Grid could've been made in one massive stack,
-//but when it comes to drawing morris board, it gets unnecesarily confusing
-//considering, it has to be drawn in one stroke
+//Grid could've been made in one massive stack of lines,
+//but when it comes to drawing morris board, it gets unnecesarily confusing to do it in one stroke
 class Gridmaker {
 	public:
+
 		//Outer Square
 		VertexArray generateGridOuter() {
 			VertexArray square(LineStrip, 5);
@@ -97,60 +98,9 @@ class Gridmaker {
 
 			return square;
 		}
+
+		void getSocket() {
+
+		}
+
 };
-
-/*
-Morris points
-	Outer
-			square[0].position = Vector2f(100.f, 100.f);
-			square[1].position = Vector2f(800.f, 100.f);
-			square[2].position = Vector2f(800.f, 800.f);
-			square[3].position = Vector2f(100.f, 800.f);
-	Mid
-			square[0].position = Vector2f(200.f, 200.f);
-			square[1].position = Vector2f(700.f, 200.f);
-			square[2].position = Vector2f(700.f, 700.f);
-			square[3].position = Vector2f(200.f, 700.f);
-	Inner
-			square[0].position = Vector2f(300.f, 300.f);
-			square[1].position = Vector2f(600.f, 300.f);
-			square[2].position = Vector2f(600.f, 600.f);
-			square[3].position = Vector2f(300.f, 600.f);
-	Slicers
-			square[0].position = Vector2f(450.f, 100.f);
-			square[1].position = Vector2f(450.f, 200.f);
-			square[2].position = Vector2f(450.f, 300.f);
-			square[4].position = Vector2f(300.f, 450.f);
-			square[5].position = Vector2f(200.f, 450.f);
-			square[6].position = Vector2f(100.f, 450.f);
-			square[8].position = Vector2f(450.f, 800.f);
-			square[9].position = Vector2f(450.f, 700.f);
-			square[10].position = Vector2f(450.f, 600.f);
-			square[12].position = Vector2f(600.f, 450.f);
-			square[13].position = Vector2f(700.f, 450.f);
-			square[14].position = Vector2f(800.f, 450.f);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-*/

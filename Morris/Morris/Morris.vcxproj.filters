@@ -23,5 +23,11 @@
     <ClInclude Include="GridMaker.h">
       <Filter>Source Files</Filter>
     </ClInclude>
+    <ClInclude Include="UserInput.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SocketGenerator.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

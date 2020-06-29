@@ -1,22 +1,32 @@
 #pragma once
-#include <SFML/Graphics.hpp>
+#include<SFML/Graphics.hpp>
+#include "GridMaker.h"
+#include<iostream>
+
+using namespace std;
+using namespace sf;
+
 class Sockets {
-	public:
-		CircleShape socket;
-		float radius = 5.f;
+private:
 
-		Sockets() {
-		}
+public:
 
-		Sockets(CircleShape socket) {
-			this->socket = socket;
-			this->socket.setRadius(5.f);
+	/* struct socket {
+		CircleShape passiveCircle;
+		float xCoord;
+		float yCoord;
+		float radiusPassive;
+	};
+	struct socket passiveSockets[25] = {}; */
 
-		}
-
-		CircleShape getSocket() {
-			return socket;
-		}
+	
+}
 
 
-};
+/*
+
+		
+
+	
+
+*/
